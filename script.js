@@ -21,7 +21,7 @@
 // ---------- Settings ----------
 // Settings variables should contain all of the "fixed" parts of your programs
 // For example: which key does what, which notes you can play, the tempo.
-const exampleKey = "a"; // the key that plays the example note
+const note = exampleKey = "a"; // the key that plays the example note
 const exampleNote = "C4"; // the note it plays
 
 // ---------- State ----------
@@ -30,7 +30,8 @@ const exampleNote = "C4"; // the note it plays
 
 // ---------- Sound ----------
 // Make the instruments and plug them into the speakers.
-const synth = new Tone.PolySynth(Tone.Synth).toDestination(); // can play several notes at once
+// Author: am8013 (changed tone.js)
+const synth = new Tone.MetalSynth(Tone.Synth).toDestination(); // can play several notes at once
 
 // ---------- Update ----------
 // Update the state. This is called every 100ms.
